@@ -21,6 +21,24 @@ function Navbar(){
 
                <div className="mt-1">
                <button className="btn btn-outline-danger me-3"><i className="fas fa-map-marker-alt"></i> Entrega: Rio de Janeiro</button>
+              {
+               //<button className="btn btn-outline-danger me-3"><i className="fas fa-sign-in-alt"></i> Acessar</button>
+              }
+
+                <div className="btn-group">     
+                        <button type="button" className="btn btn-outline-danger me-3 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i className="fas fa-user"></i>
+                        </button>
+                        <ul className="dropdown-menu">
+                            <li><a href="/pedidos" className="dropdown-item">Pedidos</a></li>
+                            <li><a href="/favoritos" className="dropdown-item">Favoritos</a></li>
+                            <li><a href="/perfil" className="dropdown-item">Perfil</a></li>
+                            <li><a href="/enderecos" className="dropdown-item">Meus Endereços</a></li>
+                            <li><hr className="dropdown-divider" /></li>
+                            <li><a  href="/"  className="dropdown-item">Sair</a></li>
+                        </ul>
+                </div>
+
 
                 </div>
 
